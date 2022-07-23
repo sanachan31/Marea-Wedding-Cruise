@@ -442,7 +442,7 @@
     margin-bottom: 180px;
   }
   .section_title {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
   }
   .link {
@@ -514,9 +514,9 @@
 /* =====SP2　メインビジュアル======================= */
 /* #region */
   #mainvisual {
-    background:url(img/mainvisual.png) no-repeat left 45% center/180%;
+    background:url(img/mainvisual.png) no-repeat left 45% center/200%;
     width: 100%;
-    height: 119vw;
+    height: 132vw;
     margin-bottom: px;
     position: relative;
   }
@@ -524,11 +524,15 @@
     display: none;
   }
   /*-----タイトル-----------------------*/
+  .title_wrap {
+    padding-top: 8vh;
+  }
   .site_title_inner {
     margin-bottom: 10px;
   }
   .title_wrap h2 {
-    font-size: 25px;
+    font-size: 28px;
+    text-align: center;
   }
   .title_wrap p {
     margin: 10px 0;
@@ -675,7 +679,7 @@
     margin: 30px auto 70px auto;
   }
   .plan_wrapper h3 {
-    font-size: 25px;
+    font-size: 23px;
   }
 /*-----moreリンク------------------*/
   .plan_link {
@@ -738,7 +742,7 @@
     margin: 0 auto;
   }
   .option_inner_sp h3 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .option_text {
     text-align: justify;
@@ -872,12 +876,6 @@
 .copylight {
   padding-bottom: 130px;
 }
-
-
-
-
-
-
 /*=====SP2 ↑==================================*/
     .wrap {
       overflow: hidden;
