@@ -44,6 +44,7 @@
 /*=====SP1　ヘッダー=============================*/
 /* #region */
 #header {
+  background-image: none;
   height: 80px;
   padding: 0 0 0 9vw;
 }
@@ -564,7 +565,7 @@
     margin: -10px 0 0 auto;
   }
   .ceremony_img1 {
-    margin-top: -60px;
+    margin-top: -13vw;
   }
   .ceremony_img2 {
     margin: -30px 0 0 auto;
@@ -587,7 +588,7 @@
     margin: 20px 0 0 auto;
   }
   .party_img1 {
-    margin: -200px 200px 0 0;
+    margin: -55vw 200px 0 0;
   }
   .pa_backcircle {
     background: linear-gradient(-30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
@@ -607,7 +608,7 @@
     margin-top: 5px;
   }
   .cuisine_img1 {
-    margin: -100px 0 0 auto;
+    margin: -18vw 0 0 auto;
   }
   .cuisine_img2 {
     margin: -30px 300px 0 0;
@@ -698,7 +699,7 @@
     width: 90vw;
   }
   .plan_img1, .plan_img5 {
-    margin: -50px 0 0 0;
+    margin: -12vw 0 0 0;
   }
   .plan_img2, .plan_img6 {
     margin: -40px 0 0 auto;
@@ -706,7 +707,7 @@
   .plan_img3 {
     width: auto;
     height: 50vw;
-    margin: -220px 0 0 30px;
+    margin: -55vw 0 0 30px;
   }
   .plan_img4 {
     margin: 40px 30px 0 auto;
@@ -775,7 +776,7 @@
     margin-top: 390px;
   }
   .op_backcircle {
-    background: linear-gradient(30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    background: linear-gradient(180deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
     top: -110vw;
     right: 0;
     width: 250vh;
@@ -876,6 +877,7 @@
 .copylight {
   padding-bottom: 130px;
 }
+/* #endregion */
 /*=====SP2 ↑==================================*/
     .wrap {
       overflow: hidden;
