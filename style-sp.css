@@ -1,0 +1,885 @@
+@charset "utf-8";
+
+/* =====全体  Marea Wedding Cruise  SP========= */
+
+/*======================================
+     SP 1  1024px
+=======================================*/
+@media screen and (max-width: 1024px) {
+/* #region */
+  p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .anchor {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+  .wrapper {
+    width: 70vw;
+    margin-bottom: 300px;
+  }
+  .link {
+    width: 120px;
+    height: 120px;
+  }
+  .imga {
+    width: 50vw;
+  }
+  .imgc {
+    width: 45vw;
+  }
+  .wrapper_back {
+    width: 80vw;
+    height: 80vw;
+  }
+  .backcircle {
+    width: 110vh;
+    height: 110vh;
+  }
+  .linebreak {
+    display: none;
+  }
+/* #endregion */
+/*=====SP1　ヘッダー=============================*/
+/* #region */
+#header {
+  height: 80px;
+  padding: 0 0 0 9vw;
+}
+.site_title {
+  font-size: 20px;
+}
+/* #endregion top */
+/* ------SP1　ハンバーガーメニュー--------------- */
+/* #region */
+.nav_pc {
+  display: none;
+}
+.nav_sp {
+  display: block;
+}
+.hamburger {
+  width: 80px;
+  height: 80px;
+  margin: 0 9vw 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity:1; 
+  position: fixed;
+  top: 50px; 
+  right: 0;
+  z-index: 100;
+}
+.hamburger:hover {
+  opacity: 0.5;
+}
+.hamburger_menu {
+  width: 80px;  /*----a要素(押せる)範囲----*/
+  height: 80px;
+}
+.hamburger_menu div {
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #707070;
+  margin: 10px 0;
+}
+/* #endregion top */
+/* ------SP1　ナビゲーション-------------------- */
+/* #region */
+.hamburger + .sidenavs:target {
+  width: 50vw;  /* サイドメニューの幅 */
+}
+.sidenavs:target {
+  overflow-x: hidden;
+  width: 0;
+}
+.sidenavs {
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(102,201,226,1) 0%, rgba(102,201,226,1) 40%, rgba(255,221,170,1) 100%);
+  overflow-x: hidden;
+  padding-top: 0px;
+  transition: 1.5s;
+}
+.sidenavs a { 
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 1.5s;
+}
+.sidenavs a:hover {
+  color: #ffffff;
+  background-color: rgba(102, 114, 226, 1);
+  text-shadow: none;
+  padding: 5px 20px 8px 20px;
+  border-radius: 20px;
+}
+.nav_list_sp {
+  width: 40vw;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+.nav_list_sp li {
+  display: block;
+  margin: 10px 0;
+}
+.nav_list_sp a {
+  padding: 10px;
+  border-radius: 50px; 
+  text-align: center;
+}
+/*------クローズボタン------------------------*/
+.sidenavs .close-btn {
+  position: absolute; 
+  top: 0px;
+  left: 20px;
+  font-size: 50px; /*---✕の大きさ---*/
+}
+.sidenavs .close-btn img {
+  width: 50px;
+}
+/* #endregion */
+/*=====SP1　メインビジュアル====================*/
+/* #region */
+  #mainvisual {
+    background:url(img/mainvisual.png) no-repeat left 45% center/120%;
+    height: 79vw;
+    margin-bottom: 80px;
+  }
+  .company_contact {
+    font-size: clamp(14px, 0.83vw, 16px);
+  }
+  .title_wrap {
+    padding-top: 8vh;
+  }
+  .site_title {
+    margin: 0 auto;
+  }
+  .title_wrap h2 {
+    font-size: clamp(40px, 3.12vw, 60px);
+  }
+  .ship {
+    width: 50vw;
+    height: 50vw;
+    margin: 23vw 0 0 56vw;
+  }
+  .title_wrap p {
+    margin: 20px 0;
+  }
+/*-----ボタン-----------------------*/
+  .mv_btn,
+  .mv_btn_rear {
+    width: 150px;
+    height: 150px;
+  }
+  .mv_btn p {
+    font-size: 16px;
+  }
+  .mv_btn_up {
+    padding-bottom: 10px;
+  }
+  .mv_btn_under {
+    padding-top: 10px;
+  }
+/* #endregion */
+/*=====SP1　セレモニー====================*/
+/* #region */
+  .ceremony_link {
+    margin: 10px 0 0 auto;
+  }
+  .ceremony_img1 {
+    margin-top: -100px;
+  }
+  .ceremony_img2 {
+    margin: -80px 0 0 auto;
+  }
+  .ce_backcircle {
+    background: linear-gradient(30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -160px;
+    right: 5vw;
+  }
+/* #endregion top */
+/* =====SP1　パーティー============================= */
+/* #region */
+  #party {
+    margin-bottom: 200px;
+  }
+  .party_img2 {
+    margin: 150px 0 0 auto;
+  }
+  .party_img1 {
+    margin: -59vw 350px 0 0;
+  }
+/*-----背景-------------------------*/
+  .pa_backcircle {
+    background: linear-gradient(-30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -120px;
+    left: 5vw;
+  }
+/* #endregion top */
+/* =====SP1　料理============================= */
+/* #region */
+#cuisine {
+  margin-bottom: 200px;
+}
+.cuisine_wrapper{
+  width: 80vw;
+  position: relative;
+}
+.cuisine_img1 {
+  margin: -150px 0 0 auto;
+}
+.cuisine_img2 {
+  margin: -120px 300px 0 0;
+}
+.cu_wrapper_back {
+  margin-top: 0;
+}
+.cu_backcircle {
+  background: linear-gradient(-60deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+  top: -110px;
+  right: 5vw;
+}
+/* #endregion top */
+/* =====SP1　ブライダルフェア============================= */
+/* #region */
+  #fair {
+    background: url(img/fair_back3.png) no-repeat center center/150%,
+              url(img/fair_back2.png) no-repeat center center/150%;
+    height: 100vw;
+    margin-bottom: 200px;
+  }
+  .fair_wrapper {
+    width: 70vw;
+    margin-top: 40px;
+  }
+  .fair_link {
+    margin: -30px 0 0 auto;
+  }
+  .fair_img1 {
+    width: 45vw;
+    margin: -46vw 300px 0 0;
+  }
+  .fair_img2 {
+    width: 45vw;
+    margin: 10vw 0 0 auto;
+  }
+/* #endregion top */
+/* =====SP1　プラン============================= */
+/* #region */
+  .slick {
+    width: 83vw;
+  }
+  .slick_slide {
+    width: 80vw;
+    padding-bottom: 50px;
+  }
+/*-----SP1 背景-------------------------*/
+  .pl_wrapper_back {
+    width: 590px;
+    height: 590px;
+  }
+  .pl_backcircle {
+    background: linear-gradient(120deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -20vw;
+    left: 3vw;
+  }
+/* #endregion top */
+/* =====SP1　オプション============================= */
+/* #region */
+  .option_wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .option_inner {
+    margin: 30px 10px 0 10px;
+  }
+/*-----背景-------------------------*/
+  .op_wrapper_back {
+    margin-top: 10vw;
+  }
+  .op_backcircle {
+    background: linear-gradient(30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -20vw;
+    right: 5vw;
+    width: 100vh;
+    height: 100vh;
+  }
+/* #endregion top */
+/* =====SP1　ドレス＆フラワー============================= */
+/* #region */
+  .dress_wrapper {
+    width: 80vw;
+    margin: 0 auto 300px auto;
+  }
+  .dress_inner {
+    width: 40vw;
+    margin: 50px 20px 0 20px;
+  }
+  .dress_img1,
+  .dress_img2 {
+    width: 38vw;
+    height: 38vw;
+    margin: 0 auto;
+  }
+  .dress_img1 {
+    background: url(img/dress-1.jpg) no-repeat center center/100%;
+  }
+  .dress_link {
+    margin: -90px 0 0 230px;
+  }
+/*-----SP1 背景-------------------------*/
+  .dr_wrapper_back {
+    margin-top: -20vw;
+  }
+  .dr_backcircle {
+    display: block;
+    background: linear-gradient(90deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -20vw;
+    left: 5vw;
+    width: 100vh;
+    height: 100vh;
+  }
+/* #endregion top */
+/* =====SP1　アクセス============================= */
+/* #region */
+  #access {
+    margin-bottom: 300px;
+  }
+  .access_wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+/*-----SP1　背景-------------------------*/
+  .ac_backcircle {
+    background: linear-gradient(-20deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -100px;
+    right: 5vw;
+    left: auto;
+    width: 100vh;
+    height: 100vh;
+  }
+/* #endregion top */
+/* =====SP1　フッター============================= */
+/* #region */
+.footer_text_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  padding: 70px 0 30px 0;
+}
+.footer_logo {
+  width: 15vw;
+  margin: 0 0 20px 0;
+}
+.footer_text_outer {
+  width: 95vw;
+  align-items: center;
+} 
+.footer_text_inner {
+  justify-content: center;
+  width: 95vw;
+}
+/* #endregion */
+/*=====SP1 ↑==========================*/
+    .wrap {
+      overflow: hidden;
+    }
+  }
+
+/*=======================================
+      横 〜1024px
+========================================*/
+@media (orientation: landscape) and (max-width: 1200px) {
+  .backcircle {
+    width: 120vw;
+    height: 120vw;
+  }
+/* =====横　ヘッダー============================*/
+  .nav_list_sp {
+    margin: 20px auto 0 auto;
+  }
+  .nav_list_sp li {
+    margin: 5px 0;
+  }
+  .nav_list_sp a {
+    padding: 8px;
+  }
+/*=====横〜1024px  SP ↑========================*/
+    .wrap {
+      overflow: hidden;
+    }
+  }
+
+/*======================================
+     SP 2  540px
+=======================================*/
+@media screen and (max-width: 540px) {
+/* #region */
+  p {
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  .anchor {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+  .wrapper {
+    width: 85vw;
+    margin-bottom: 180px;
+  }
+  .section_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .link {
+    width: 20vw;
+    height: 20vw;
+  }
+  .link p {
+    font-size: 1rem;
+    transform: translateY(-3px);
+  }
+  .arrow {
+    display: none;
+  }
+  .imga, .imgb {
+    width: 50vw;
+    }
+  .imgc {
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .wrapper_back {
+    width: 85vw;
+    height: 85vw;
+  }
+  .backcircle {
+    width: 150vh;
+    height: 150vh;
+  }
+  .linebreak2 {
+    display: none;
+  }
+  .linebreak3 {
+    display: block;
+  }
+/* #endregion */
+/* =====SP2　ヘッダー=================================*/
+/* #region */
+/* ------SP2　ハンバーガーメニュー------ */
+.hamburger {
+  width: 10vw;
+  top: 0;
+}
+.hamburger_menu {
+  width: 10vw;  /*----a要素(押せる)範囲----*/
+  height: 10vw;
+}
+.hamburger_menu div {
+  width: 10vw;
+  height: 4px;
+  margin: 5px 0;
+}
+/* ------SP2　ナビゲーション-------------------- */
+.hamburger + .sidenavs:target {
+  overflow-x: visible;
+  width: 100vw;  /* サイドメニューの幅 */
+  display:block;
+}
+.sidenavs a { 
+  font-size: 16px;
+}
+.nav_list_sp {
+  width: 90vw;
+  margin: 20px auto 0 auto;
+}
+.nav_list_sp li {
+  margin: 0;
+}
+/* #endregion */
+/* =====SP2　メインビジュアル======================= */
+/* #region */
+  #mainvisual {
+    background:url(img/mainvisual.png) no-repeat left 45% center/180%;
+    width: 100%;
+    height: 119vw;
+    margin-bottom: px;
+    position: relative;
+  }
+  .company_contact {
+    display: none;
+  }
+  /*-----タイトル-----------------------*/
+  .site_title_inner {
+    margin-bottom: 10px;
+  }
+  .title_wrap h2 {
+    font-size: 25px;
+  }
+  .title_wrap p {
+    margin: 10px 0;
+  }
+  .ship {
+    width: 60vw;
+    height: 60vw;
+    margin: 0;
+    position: absolute;
+    top: 100vw;
+    left: 45vw;
+  }
+  /*-----ボタン-----------------------*/
+  .mv_btn,
+  .mv_btn_rear {
+    width: 120px;
+    height: 120px;
+    bottom: 2vw;
+    left: 2vw;
+    right: auto;
+  }
+  .mv_btn p {
+    font-size: 14px;
+  }
+/* #endregion top */
+/* =====SP2　セレモニー============================= */
+/* #region */
+  .ceremony_link {
+    margin: -10px 0 0 auto;
+  }
+  .ceremony_img1 {
+    margin-top: -60px;
+  }
+  .ceremony_img2 {
+    margin: -30px 0 0 auto;
+  }
+  .ce_backcircle {
+    background: linear-gradient(30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -180px;
+    right: 3vw;
+  }
+/* #endregion top */
+/* =====SP2　パーティー============================= */
+/* #region */
+  #party {
+    margin-bottom: 80px;
+  }
+  .party_link {
+    margin-top: 10px;
+  }
+  .party_img2 {
+    margin: 20px 0 0 auto;
+  }
+  .party_img1 {
+    margin: -200px 200px 0 0;
+  }
+  .pa_backcircle {
+    background: linear-gradient(-30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -120px;
+    left: 3vw;
+  }
+/* #endregion top */
+/* =====SP2　料理============================= */
+/* #region */
+  #cuisine {
+    margin-bottom: 180px;
+  }
+  .cuisine_wrapper{
+    width: 85vw;
+  }
+  .cuisine_link {
+    margin-top: 5px;
+  }
+  .cuisine_img1 {
+    margin: -100px 0 0 auto;
+  }
+  .cuisine_img2 {
+    margin: -30px 300px 0 0;
+  }
+  .cu_backcircle {
+    background: linear-gradient(-60deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -80px;
+    right: 5vw;
+  }
+/* #endregion top */
+/* =====SP2　ブライダルフェア============================= */
+/* #region */
+  #fair {
+    background: url(img/fair_back3.png) no-repeat left 40% center/250%,
+                url(img/fair_back2.png) no-repeat left 40% center/250%;
+    height: 165vw;
+    margin-bottom: 170px;
+  }
+    /*position: relative;
+    z-index: 0;
+    overflow: hidden;*/
+  
+  /*#fair::before {
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する*/
+    /*-webkit-filter: blur(1px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    /*top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -1;/*重なり順序を一番下にしておく*/
+
+  .fair_wrapper {
+    width: 85vw;
+    padding-bottom: 100px;
+    margin-top: 0px;
+  }
+  .fair_link {
+    margin: -10px 0 0 auto;
+  }
+  .fair_img1 {
+    width: 45vw;
+    margin: -46vw 300px 0 0;
+  }
+  .fair_img2 {
+    width: 45vw;
+    margin: 10vw 0 0 auto;
+  }
+/* #endregion top */
+/* =====SP2　プラン============================= */
+/* #region */
+  #plan {
+    margin-bottom: 180px;
+  }
+  .slick {
+    width: 90vw;
+  }
+  .slick_slide {
+    width: 85vw;
+    padding-bottom: 0;
+  }
+  .plan_wrapper {
+    margin: 30px auto 70px auto;
+  }
+  .plan_wrapper h3 {
+    font-size: 25px;
+  }
+/*-----moreリンク------------------*/
+  .plan_link {
+    margin: -20px 0 0 60vw;
+  }
+  #plan .arrow {
+    display: none;
+  }
+/*-----デイ------------------------------*/
+.plan_dayinner {
+  width: 90vw;
+  justify-content: flex-start;
+}
+/*-----画像------------------------*/
+  #plan figure {
+    width: 90vw;
+  }
+  .plan_img1, .plan_img5 {
+    margin: -50px 0 0 0;
+  }
+  .plan_img2, .plan_img6 {
+    margin: -40px 0 0 auto;
+  }
+  .plan_img3 {
+    width: auto;
+    height: 50vw;
+    margin: -220px 0 0 30px;
+  }
+  .plan_img4 {
+    margin: 40px 30px 0 auto;
+  }  
+/*-----SP2 背景-------------------------*/
+  .pl_wrapper_back {
+    width: 90vw;
+    height: 90vw;
+  }
+  .pl_backcircle {
+    background: linear-gradient(120deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -250px;
+    left: 0;
+  }
+/* #endregion top */
+/* =====SP2　オプション============================= */
+/* #region */
+  #option {
+    margin-bottom: 180px;
+  }
+  .option_wrapper {
+    display: none;
+  }
+  .option_wrapper_sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .option_inner_sp {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .option_inner_sp h3 {
+    font-size: 25px;
+  }
+  .option_text {
+    text-align: justify;
+    margin-top: 0;
+  }
+  .option_link {
+    margin-top: -10px;
+  }
+  .op_img1 {
+    margin: -13vw auto 30px 0;
+  }
+  .op_img2 {
+    margin: 0 0 6vw auto;
+  }
+  .op_h3 {
+    margin-top: -50px;
+  }
+/*-----SP2　背景-------------------------*/
+  .op_wrapper_back_sp {
+    background: linear-gradient(270deg, rgba(102,114,226,0.2) 0%, rgba(102,114,226,0.2) 37%, rgba(102,114,226,0) 100%);
+    width: 90vw;
+    height: 90vw;
+    margin-top: 110px;
+  }
+  .op_wrapper_back2 {
+    display: block;
+    background: linear-gradient(270deg, rgba(102,114,226,0.2) 0%, rgba(102,114,226,0.2) 37%, rgba(102,114,226,0) 100%);
+    width: 90vw;
+    height: 90vw;
+    margin-top: 390px;
+  }
+  .op_backcircle {
+    background: linear-gradient(30deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -110vw;
+    right: 0;
+    width: 250vh;
+    height: 250vh;
+  }
+/* #endregion top */
+/* =====SP2　ドレス＆フラワー============================= */
+/* #region */
+  #dress {
+    margin-bottom: 180px;
+  }
+  .dress_wrapper {
+    flex-direction: column;
+  }
+  .dress_inner {
+    width: 50vw;
+  }
+  .dress_inner_sp1 {
+    margin: 20px auto 0 0
+  }
+  .dress_inner_sp2 {
+    margin: 10px 0 0 auto;
+  }
+  .dress_img1, .dress_img2 {
+    width: 50vw;
+    height: 50vw;
+  }
+  .sp_link1 {
+    margin: -25vw 0 0 45vw;
+  }
+  .sp_link2 {
+    margin: -25vw 0 0 -15vw;
+  }
+  /*-----SP2　背景-------------------------*/
+  .dr_wrapper_back {
+    width: 100vw;
+    height: 100vw;
+    margin-top: -10px;
+  }
+  .dr_backcircle {
+    background: linear-gradient(90deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -30vw;
+    left: 0;
+    width: 150vh;
+    height: 150vh;
+  }
+/* #endregion top */
+/* =====SP2　アクセス============================= */
+/* #region */
+  #access {
+      margin-bottom: 100px;
+  }
+  #access p:nth-child(2) {
+    margin: 20px 0 20px 0;
+  }
+  #access p:nth-child(3) {
+    margin: 0 0 20px 0;
+  }
+  /*-----SP2　背景-------------------------*/
+  .ac_wrapper_back {
+    width: 100vw;
+    height: 100vw;
+  }
+  .ac_backcircle {
+    background: linear-gradient(-20deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: -60vw;
+    right: 0;
+  }
+/* #endregion top */
+/* =====SP2　フッター============================= */
+/* #region */
+.footer_text_wrapper {
+  padding: 30px 0;
+}
+.footer_logo {
+  width: 30vw;
+  margin: 0 0 20px 0;
+}
+.footer_text_inner {
+  flex-direction: column;
+}
+.footer_text_inner ul {
+  margin: 0 20px;
+}
+.footer_text_inner ul li {
+  padding: 0 0 5px 0;
+  text-align: center;
+}
+.footer_text_inner ul li a {
+  padding: 5px  0;
+  font-size: 0.825rem;
+}
+#footer p {
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.copylight {
+  padding-bottom: 130px;
+}
+
+
+
+
+
+
+/*=====SP2 ↑==================================*/
+    .wrap {
+      overflow: hidden;
+    }
+  }

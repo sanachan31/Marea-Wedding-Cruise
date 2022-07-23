@@ -1,0 +1,51 @@
+
+/*-----矢印の位置を内側に移動-------------*/
+.slick-prev {
+  left: 100px;
+}
+.slick-next { 
+  right: 120px;
+}
+/*-----矢印の色を変更---------------------*/
+.slick-prev:before, 
+.slick-next:before {
+  color: #6672e2;
+  font-size: 40px;
+}
+/*-----下に潜っているかもしれない画像の上に矢印を持ってくる-----*/
+.slick-prev,  
+.slick-next {  
+  z-index: 100;  
+}
+
+/*======================================
+     SP 1
+=======================================*/
+@media screen and (max-width: 1024px) {
+
+  .slick-prev {
+    left: -20px;
+  }
+  .slick-next { 
+    right: -10px;
+  }
+}
+
+/*======================================
+     SP 2
+=======================================*/
+@media screen and (max-width: 540px) {
+
+  .slick-prev {
+    left: -10px;
+    top: 90%;
+  }
+  .slick-next { 
+    right: 0;
+    top: 90%;
+  }
+  .slick-prev:before, 
+  .slick-next:before {
+    font-size: 30px;
+  }
+}
