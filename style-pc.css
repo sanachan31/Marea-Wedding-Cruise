@@ -581,6 +581,7 @@ ul.slick > li:not(:first-child) {
   width: 768px;
   height: 768px;
   background: linear-gradient(20deg, rgba(102,114,226,0.2) 0%, rgba(102,114,226,0.2) 37%, rgba(102,114,226,0) 100%);
+  margin-top: -200px;
 }
 .dr_backcircle {
   display: none;
