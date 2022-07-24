@@ -364,9 +364,12 @@
     margin: 0 auto;
   }
 /*-----SP1　背景-------------------------*/
+  .ac_wrapper_back {
+    margin-top: -50px;
+  }
   .ac_backcircle {
     background: linear-gradient(-20deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
-    top: -100px;
+    top: -10vw;
     right: 5vw;
     left: auto;
     width: 100vh;
@@ -465,8 +468,8 @@
     margin: 0 auto;
   }
   .wrapper_back {
-    width: 85vw;
-    height: 85vw;
+    width: 90vw;
+    height: 90vw;
   }
   .backcircle {
     width: 150vh;
@@ -608,7 +611,7 @@
     margin-top: 5px;
   }
   .cuisine_img1 {
-    margin: -18vw 0 0 auto;
+    margin: -20vw 0 0 auto;
   }
   .cuisine_img2 {
     margin: -30px 300px 0 0;
@@ -786,7 +789,8 @@
 /* =====SP2　ドレス＆フラワー============================= */
 /* #region */
   #dress {
-    margin-bottom: 180px;
+    margin: 0 auto 180px auto;
+    width: 85vw;
   }
   .dress_wrapper {
     flex-direction: column;
@@ -812,8 +816,8 @@
   }
   /*-----SP2　背景-------------------------*/
   .dr_wrapper_back {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
     margin-top: -10px;
   }
   .dr_backcircle {
@@ -837,8 +841,9 @@
   }
   /*-----SP2　背景-------------------------*/
   .ac_wrapper_back {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
+    margin-top: 0;
   }
   .ac_backcircle {
     background: linear-gradient(-20deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
