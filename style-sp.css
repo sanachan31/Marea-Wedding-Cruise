@@ -5,7 +5,7 @@
 /*======================================
      SP 1  1024px
 =======================================*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
 /* #region */
   p {
     font-size: 1rem;
@@ -729,7 +729,7 @@
 /* =====SP2　オプション============================= */
 /* #region */
   #option {
-    margin-bottom: 180px;
+    margin-bottom: 80px;
   }
   .option_wrapper {
     display: none;
@@ -831,7 +831,7 @@
 /* =====SP2　アクセス============================= */
 /* #region */
   #access {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
   }
   #access p:nth-child(2) {
     margin: 20px 0 20px 0;
