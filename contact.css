@@ -1,0 +1,683 @@
+@charset "utf-8";
+
+/* =====全体  Marea Wedding Cruise contact ======= */
+
+/* =====リセットCSS========================== */
+/* #region top */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* #endregion top */
+/* =====html,body============================ */
+/* #region top */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #707070;
+  font-size: 1.125rem;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cinzel-Regular", "Hannari", serif;
+  scroll-behavior: smooth;
+}
+/*@font-face {
+  font-family: "Cinzel-Regular";
+  src: url('./font/Cinzel-Regular.ttf') format('ttf');
+}*/
+a {
+  text-decoration: none;
+  color: #707070;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+h1,h2 {
+  line-height: 1;
+  margin: 0;
+}
+nav, ul, li {
+  list-style: none;
+}
+figure {
+  padding: 0;
+  margin: 0;
+}
+input, textarea, button {
+  background-color: inherit;
+  font-family: inherit;
+}
+p {
+  color: #707070;
+  font-size: 1.125rem;
+}
+.anchor {
+  display: block;
+  padding-top: 120px;
+  margin-top: -120px;
+}
+.wrapper {
+  width: 1000px;
+  margin-bottom: 300px;
+  position: relative;
+}
+.section_title {
+  font-size: clamp(35px, 3.64vw, 70px);
+  margin-bottom: 30px;
+}
+.wrapper_back {
+  border-radius: 50%;
+  width: 920px;
+  height: 920px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.backcircle {
+  border-radius: 50%;
+  width: 103vw;
+  height: 103vw;
+  position: absolute;
+  z-index: -10;
+}
+/* #endregion */
+/* =====ヘッダー==============================*/
+/* #region */
+#header {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio ="none"><path fill="rgba(255,255,255,0.8)" d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,229.3C1120,256,1280,256,1360,256L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" /></svg>');
+  background-size: 100%;
+  font-size: clamp(16px, 0.93vw, 18px);
+  width: 100vw;
+  height: 180px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+@-moz-document url-prefix() { /*-----firefoxでSVG背景画像を表示させる----*/
+  #header {
+  background-size: 100% 100%;
+  }
+}
+.nav_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  padding-top: 40px;
+}
+.nav_pc {
+  display: flex;
+  padding: 10px 50px;
+}
+.nav_pc a {
+  padding: 0 20px;
+  text-shadow: 1px 1px 3px #ffffff;
+}
+.nav_pc li a:hover {
+  color: #ffffff;
+  background-color: rgba(102, 114, 226, 0.8);
+  text-shadow: none;
+  padding: 5px 20px 8px 20px;
+  border-radius: 20px;
+}
+.nav_sp {
+  display: none;
+}
+/* #endregion top */
+/* =====PC コンタクト============================ */
+/* #region top */
+#contact {
+	position: relative;
+  display: flex;
+  justify-content: center;
+}
+#contact .wrapper {
+	margin-bottom:200px;
+}
+#contact .section_title {
+	margin-top:200px;
+}
+.contact_text {
+	margin:50px 0 0 0;
+}
+.contact_form dl {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto; 
+}
+.contact_form dd input,
+.contact_form dd textarea {
+  width: 100%;
+  border: solid 1px #707070;
+  padding: 10px;
+}
+.contact_form textarea {
+  height: 190px;
+}
+/* #endregion */
+/*------ボタン------------------*/
+/* #region*/
+#form_submit input {
+  background: linear-gradient(140deg, rgba(102,201,226,0) 0%, rgba(102,201,226,0.9) 50%, rgba(102,201,226,0) 100%);
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 50px auto 0 auto;
+  border-radius: 45px;
+  box-shadow: 2px 2px 10px rgba(112,112,112,0.7);
+  font-size: 1.2rem;
+  border-style: inherit ;
+}
+#form_submit input:hover {
+  background-color:#6672e2;
+  opacity: 1;
+}
+.contact_radio {
+  display: block;
+  margin: 10px 0 0 0;
+}
+/*-----PC　背景-------------------------*/
+.co_wrapper_back {
+  background: linear-gradient(120deg, rgba(102,114,226,0.2) 0%, rgba(102,114,226,0.2) 37%, rgba(102,114,226,0) 100%);
+  margin-top:200px;
+}
+.co_wrapper_back2 {
+  display: none;
+}
+.co_backcircle {
+  background: linear-gradient(180deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+  top: 0px;
+  left: 3vw;
+}
+/* #endregion*/
+/* =====フッター============================= */
+/* #region */
+#footer {
+  background: rgb(102,201,226);
+  background: rgb(102,201,226);
+  background: linear-gradient(180deg, rgba(102,201,226,0.2) 0%, rgba(102,201,226,0.8) 33%, rgba(255,221,170,1) 100%);
+}
+.footer_wrapper {
+  position: relative;
+}
+/*-----SVG-------------------------*/
+.footer_wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.footer_wave svg {
+  position: relative;
+  display: block;
+  width: calc(166% + 1.3px);
+  height: 106px;
+}
+.footer_wave .shape-fill {
+  fill: rgba(102,201,226,0.2);
+}
+/*-----テキスト---------------------*/
+.footer_text_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.footer_logo {
+  width: 220px;
+  margin-right: 50px;
+}
+.footer_text_outer {
+  display: flex;
+  flex-direction: column;
+}
+.footer_text_inner {
+  display: flex;
+}
+.footer_text_inner ul {
+  display: block;
+  margin: 20px;
+}
+.footer_text_inner ul li {
+  padding: 8px 0;
+}
+.footer_text_inner ul a {
+  padding: 0 20px;
+}
+.footer_text_inner ul a:hover {
+  color: #ffffff;
+  background-color: #6072e2;
+  text-shadow: none;
+  padding: 5px 20px 8px 20px;
+  border-radius: 20px;
+}
+#footer p {
+  text-align: center;
+}
+.copylight {
+  padding-bottom: 80px;
+  font-size: 0.875rem;
+}
+/* #endregion*/
+/*======PC  ↑================================*/
+.wrap {
+  overflow: hidden;
+}
+/*======================================
+     SP 1  1024px
+=======================================*/
+@media screen and (max-width: 1080px) {
+/* #region */
+  p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  dl,dd,dt {
+    font-size: 1rem;
+  }
+  .anchor {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+  .wrapper {
+    width: 70vw;
+    margin-bottom: 300px;
+  }
+  .link {
+    width: 120px;
+    height: 120px;
+  }
+  .imga {
+    width: 50vw;
+  }
+  .imgc {
+    width: 45vw;
+  }
+  .wrapper_back {
+    width: 80vw;
+    height: 80vw;
+  }
+  .backcircle {
+    width: 110vh;
+    height: 110vh;
+  }
+  .linebreak {
+    display: none;
+  }
+/* #endregion */
+  /*=====SP1　ヘッダー=============================*/
+/* #region */
+  #header {
+    background-image: none;
+    height: 80px;
+    padding: 0 0 0 9vw;
+  }
+  .site_title {
+    font-size: 20px;
+  }
+  /* #endregion top */
+  /* ------SP1　ハンバーガーメニュー--------------- */
+  /* #region */
+  .nav_pc {
+    display: none;
+  }
+  .nav_sp {
+    display: block;
+  }
+  .hamburger {
+    width: 80px;
+    height: 80px;
+    margin: 0 9vw 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity:1; 
+    position: fixed;
+    top: 50px; 
+    right: 0;
+    z-index: 100;
+  }
+  .hamburger:hover {
+    opacity: 0.5;
+  }
+  .hamburger_menu {
+    width: 80px;  /*----a要素(押せる)範囲----*/
+    height: 80px;
+  }
+  .hamburger_menu div {
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #707070;
+    margin: 10px 0;
+  }
+  /* #endregion top */
+  /* ------SP1　ナビゲーション-------------------- */
+  /* #region */
+  .hamburger + .sidenavs:target {
+    width: 50vw;  /* サイドメニューの幅 */
+  }
+  .sidenavs:target {
+    overflow-x: hidden;
+    width: 0;
+  }
+  .sidenavs {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(102,201,226,1) 0%, rgba(102,201,226,1) 40%, rgba(255,221,170,1) 100%);
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 1.5s;
+  }
+  .sidenavs a { 
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 1.5s;
+  }
+  .sidenavs a:hover {
+    color: #ffffff;
+    background-color: rgba(102, 114, 226, 1);
+    text-shadow: none;
+    padding: 5px 20px 8px 20px;
+    border-radius: 20px;
+  }
+  .nav_list_sp {
+    width: 40vw;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+  }
+  .nav_list_sp li {
+    display: block;
+    margin: 10px 0;
+  }
+  .nav_list_sp a {
+    padding: 10px;
+    border-radius: 50px; 
+    text-align: center;
+  }
+  /*------クローズボタン------------------------*/
+  .sidenavs .close-btn {
+    position: absolute; 
+    top: 0px;
+    left: 20px;
+    font-size: 50px; /*---✕の大きさ---*/
+  }
+  .sidenavs .close-btn img {
+    width: 50px;
+  }
+/* #endregion */
+/* =====SP1　コンタクト============================= */
+/* #region */
+  #contact {
+    margin-bottom: 100px;
+  }
+  #contact .wrapper {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  #contact .section_title {
+    margin-top:150px;
+  }
+  .contact_form dl {
+    max-width: 70vw;
+  }
+  /*-----SP1　背景-------------------------*/
+  .co_backcircle {
+    background: linear-gradient(180deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: 100px;
+    right: 2vw;
+    left: auto;
+    width: 120vh;
+    height: 120vh;
+  }  
+/* #endregion top */
+/* =====SP1　フッター============================= */
+  /* #region */
+  .footer_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding: 70px 0 30px 0;
+  }
+  .footer_logo {
+    width: 15vw;
+    margin: 0 0 20px 0;
+  }
+  .footer_text_outer {
+    width: 95vw;
+    align-items: center;
+  } 
+  .footer_text_inner {
+    justify-content: center;
+    width: 95vw;
+  }
+/* #endregion */
+/*=====SP1 ↑==========================*/
+  .wrap {
+    overflow: hidden;
+  }
+}
+/*=======================================
+      横 〜1024px
+========================================*/
+@media (orientation: landscape) and (max-width: 1200px) {
+  .backcircle {
+    width: 120vw;
+    height: 120vw;
+  }
+/* =====横　ヘッダー============================*/
+  .nav_list_sp {
+    margin: 20px auto 0 auto;
+  }
+  .nav_list_sp li {
+    margin: 5px 0;
+  }
+  .nav_list_sp a {
+    padding: 8px;
+  }
+/*=====横〜1024px  SP ↑========================*/
+    .wrap {
+      overflow: hidden;
+    }
+  }
+
+/*======================================
+     SP 2  540px
+=======================================*/
+@media screen and (max-width: 540px) {
+/* #region */
+  p {
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  .anchor {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+  .wrapper {
+    width: 85vw;
+    margin-bottom: 180px;
+  }
+  .section_title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .link {
+    width: 20vw;
+    height: 20vw;
+  }
+  .link p {
+    font-size: 1rem;
+    transform: translateY(-3px);
+  }
+  .arrow {
+    display: none;
+  }
+  .imga, .imgb {
+    width: 50vw;
+    }
+  .imgc {
+    width: 55vw;
+    margin: 0 auto;
+  }
+  .wrapper_back {
+    width: 90vw;
+    height: 90vw;
+  }
+  .backcircle {
+    width: 150vh;
+    height: 150vh;
+  }
+  .linebreak2 {
+    display: none;
+  }
+  .linebreak3 {
+    display: block;
+  }
+/* #endregion */
+/* =====SP2　ヘッダー=================================*/
+/* #region */
+/* ------SP2　ハンバーガーメニュー------ */
+  .hamburger {
+    width: 10vw;
+    top: 0;
+  }
+  .hamburger_menu {
+    width: 10vw;  /*----a要素(押せる)範囲----*/
+    height: 10vw;
+  }
+  .hamburger_menu div {
+    width: 10vw;
+    height: 4px;
+    margin: 5px 0;
+  }
+  /* ------SP2　ナビゲーション-------------------- */
+  .hamburger + .sidenavs:target {
+    overflow-x: visible;
+    width: 100vw;  /* サイドメニューの幅 */
+    display:block;
+  }
+  .sidenavs a { 
+    font-size: 16px;
+  }
+  .nav_list_sp {
+    width: 90vw;
+    margin: 20px auto 0 auto;
+  }
+  .nav_list_sp li {
+    margin: 0;
+  }
+/* #endregion */
+/* =====SP2　コンタクト============================ */
+/* #region top */
+  #contact {
+    margin-bottom:100px;
+  }
+  #contact .wrapper {
+    width: 85vw;
+  }
+  .contact_form dl {
+    max-width: 85vw;
+  }
+  .contact_form textarea {
+    height: 200px;
+  }
+  /*------ボタン------------------*/
+  #form_submit input {
+    width: 130px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  .co_wrapper_back,
+  .co_wrapper_back2 {
+    width: 100vw;
+    height: 100vw;
+  } 
+  .co_wrapper_back2 {
+    display: block;
+    background: linear-gradient(0deg, rgba(102,114,226,0.2) 0%, rgba(102,114,226,0.2) 37%, rgba(102,114,226,0) 100%);
+    margin-top:550px;
+  }
+  .co_backcircle {
+    background: linear-gradient(180deg, rgba(102,114,226,0.3) 0%, rgba(102,201,226,0.3) 37%, rgba(102,201,226,0) 100%);
+    top: 50px;
+    right: -2vw;
+    width: 190vh;
+    height: 190vh;
+  }  
+/* #endregion top */
+/* =====SP2　フッター============================= */
+/* #region */
+  .footer_text_wrapper {
+    padding: 30px 0;
+  }
+  .footer_logo {
+    width: 30vw;
+    margin: 0 0 20px 0;
+  }
+  .footer_text_inner {
+    flex-direction: column;
+  }
+  .footer_text_inner ul {
+    margin: 0 20px;
+  }
+  .footer_text_inner ul li {
+    padding: 0 0 5px 0;
+    text-align: center;
+  }
+  .footer_text_inner ul li a {
+    padding: 5px  0;
+    font-size: 0.825rem;
+  }
+  #footer p {
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .copylight {
+    padding-bottom: 130px;
+  }
+/* #endregion */
+/*=====SP2 ↑==================================*/
+  .wrap {
+    overflow: hidden;
+  }
+}
